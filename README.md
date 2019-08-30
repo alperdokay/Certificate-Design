@@ -1,5 +1,5 @@
 # FRC-Certificate-Design
 
-This repository contains the files of certificate.frcturkey.org. The main purpose of creating this repository is to get help from FRC Alumni Community in the future to sustain an online e-certificate system.
+This repository contains the files of certificate.frcturkey.org. The main purpose of creating this repository is to get help from FRC Alumni Community to sustain an online e-certificate system.
 
 Paper.css is being used to form the page according to A4 size. https://github.com/cognitom/paper-css
