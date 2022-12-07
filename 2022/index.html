@@ -1,0 +1,144 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>2022 RAPID REACT</title>
+
+    <!-- Normalize or reset CSS with your favorite library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+    <!-- Load paper.css for happy printing -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.4.1/paper.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Set page size here: A5, A4 or A3 -->
+    <!-- Set also "landscape" if you need -->
+    <style>
+        @@page {
+            size: A4 landscape
+        }
+
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 70%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+            .close:hover,
+            .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+    </style>
+</head>
+
+<!-- Set "A5", "A4" or "A3" for class name -->
+<!-- Set also "landscape" if you need -->
+<body class="A4 landscape">
+
+    <!-- Each sheet element should have the class "sheet" -->
+    <!-- "padding-**mm" is optional: you can set 10, 15, 20 or 25 -->
+    <!--<section class="sheet padding-10mm">-->
+    <section class="sheet" style="padding: 6mm;">
+        <!-- Write HTML just like a web page -->
+        <h3>
+                <span>CONGRATULATIONS!</span>
+        </h3>
+        <h2>NAME_SURNAME</h2>
+            <p>
+                from team <strong>#TEAM_NUMBER</strong> participated at the 2022
+            <span>İzmir Regional on the 4-6th of March 2022 at Fuar İzmir.</span>
+            </p>
+            <!-- <p>
+                Mentored team <strong> #TEAM_NUMBER</strong> at the 2022
+            <span>İzmir Regional on the 4-6th of March 2022 at Fuar İzmir.</span>
+            </p>
+    <p>
+        Volunteered at the 2022
+        <span>İzmir Regional on the 4-6th of March 2022 at Fuar İzmir.</span>
+    </p>
+            <p>
+                Judged at the 2022
+                    <span>İzmir Regional on the 4-6th of March 2022 at Fuar İzmir.</span>
+            </p> -->
+        <div class="signature-box">
+            <div class="ayse"><h3>Ayşe Selçok Kaya</h3><h5>Representative - Fikret Yüksel Foundation</h5></div>
+            <div class="alex"><h3>Alex Francis Burchard</h3><h5>President - Fikret Yüksel Foundation</h5></div>
+        </div>
+    </section>
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content" id="myModal2" style="font-family:'Montserrat',sans-serif;width:70%;">
+            <span class="close"><span style="color:black">&times;</span></span>
+            <h1>FRC Sertifika sistemimize hoşgeldiniz!</h1><br />
+            <span>
+                Bu ekranı kapattıktan sonra; <br /><br />
+                Çıktı alabilmek için <strong>CTRL + P</strong> tuşlarına basınız. <br /><hr />
+                Kaliteli bir çıktı için;<br /><br />
+                Kağıt boyutunu A4 seçiniz ve ayarlardan arka plan grafiklerini işaretleyiniz. <br /><br />
+                Sistemimizi kullandığınız için teşekkür ederiz. <br />
+                <strong>Fikret Yüksel Vakfı IT Komitesi</strong>
+            </span>
+
+        </div>
+    </div>
+</body>
+<script src="~/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        modal.style.display = 'block';
+    };</script>
+<script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal
+    //btn.onclick = function() {
+    //    modal.style.display = "block";
+    //}
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+</html>
